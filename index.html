@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Language Translator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        img {
+            margin-top: 20px;
+            border: 4px solid #333;
+            border-radius: 10px;
+            width: 640px;
+            height: 480px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Real-Time Sign Language Translator</h1>
+    <p>Show hand gestures to translate into text</p>
+
+    <!-- THIS IS THE IMPORTANT LINE -->
+    <img src="{{ url_for('video') }}" />
+
+</body>
+</html>
